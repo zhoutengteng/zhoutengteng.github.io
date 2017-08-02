@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link type="text/css" rel="stylesheet" href="css/index.css"></link>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
 <style>
-a:link {text-decoration:none;}    /* 未被访问的链接 */
-a:visited {text-decoration:none;} /* 已被访问的链接 */
-a:hover {text-decoration:underline;}   /* 鼠标指针移动到链接上 */
-a:active {text-decoration:underline;}  /* 正在被点击的链接 */
+
 </style>
 </head>
 
 <body>
 <p><b><a href="/people.html" target="_blank">这是一个链接</a></b></p>
-<p><b>注释：</b>为了使定义生效，a:hover 必须位于 a:link 和 a:visited 之后！！</p>
+<p><b>注释：</b>为了使定义生效，a:hover 必须位于 a:link 和 a:visited 之后！！ </p>
 <p><b>注释：</b>为了使定义生效，a:active 必须位于 a:hover 之后！！</p>
 
   <div id="time"></div>
-    <script type="text/javascript">
-    window.onload = function(){
-        var A = 1256056504, B = 1256117187;
-        var t = parseInt((B - A) / 1000);
-        (function(){
-            document.getElementById("time").innerHTML = t;
-            if(--t >= 0){
-                setTimeout(arguments.callee, 1000);
-            }
-        })();
-    }
-    </script> 
-  
+
+
  </body>
-  
-  
+
+
 </html>
